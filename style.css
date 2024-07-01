@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #6c6b6b;
+  color: #fff;
   background-color: #212121;
 }
 
@@ -12,23 +12,56 @@
   font-weight: normal;
   font-style: normal;
 
-  font-family: "Kosugi Maru", sans-serif;
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 body {
-  font-family: "Kosugi Maru", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-main {
+.top-text,
+.side-message1 {
   font-family: "SpeedyRight", sans-serif;
+}
+h1 {
+  font-family: "DotGothic16", sans-serif;
+  color: white;
+  font-size: 40px;
+  text-shadow: 3px 3px green;
+  background-color: transparent;
+  letter-spacing: 0.12em;
+}
+
+p {
+  color: white;
+  font-size: 24px;
+  background-color: transparent;
+  letter-spacing: 0.12em;
 }
 
 header {
   color: blue;
   width: 100%;
   height: 60px;
+}
+
+.nav-list {
+  text-align: right;
+  padding: 30px 30px;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 main {
@@ -58,6 +91,42 @@ main {
   font-size: 80px;
   color: #fff;
   background-color: transparent;
+}
+
+.side-message1 {
+  position: absolute;
+  top: 1000px;
+  right: 20px;
+  padding: 20px;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 3px 3px yellow;
+  background-color: transparent;
+}
+
+.main-contents {
+  width: 100%;
+  height: 10000px;
+  padding: 32px;
+}
+
+.informarion {
+  padding-left: 20px;
+  padding-top: 40px;
+
+}
+
+.date {
+  padding-left: 80px;
+  padding-top: 20px;
+  letter-spacing: 0.2em;
+  line-height:2;
+}
+
+.kaigyo_padding{
+    padding-left: 120px;
 }
 
 footer {
