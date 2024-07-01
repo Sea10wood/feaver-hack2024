@@ -28,7 +28,7 @@ body {
 
 .top-text,
 .side-message1 {
-  font-family: "SpeedyRight", sans-serif;
+  font-family: "DotGothic16", sans-serif;
 }
 h1 {
   font-family: "DotGothic16", sans-serif;
@@ -37,6 +37,10 @@ h1 {
   text-shadow: 3px 3px green;
   background-color: transparent;
   letter-spacing: 0.12em;
+}
+
+h4 {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 p {
@@ -94,10 +98,42 @@ main {
   background-color: transparent;
 }
 
+.qr-container {
+  position: absolute;
+  width: 200px;
+  height: 200px; 
+  top: 500px;
+  right: 200px;
+  border-radius: 8px;
+}
+
+.qr-label {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.qr {
+  width: 200px;
+  height: 200px;
+  top: 500px;
+  right: 200px;
+  border-radius: 8px;
+  border: 5px solid black;
+  bottom: 0;
+}
+
 .side-message1 {
   position: absolute;
   top: 1000px;
-  right: 20px;
+  right: 4px;
   padding: 20px;
   white-space: nowrap;
   writing-mode: vertical-rl;
@@ -150,7 +186,7 @@ main {
 
 .judge {
   padding-left: 20px;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 h1#judge {
   font-family: "DotGothic16", sans-serif;
@@ -205,6 +241,24 @@ h1#judge {
 
 footer {
   width: 100%;
-  height: 40px;
-  background-color: grey;
+  height: auto;
+  padding: 16px;
+  display: flex;
+  text-align: start;
+  gap: 16px;
+}
+
+.kcl {
+  padding-top: 10px;
+}
+
+.kcl-img {
+  width: 64px;
+  height: 64px;
+  margin-left: 64px;
+}
+
+.mail-contents {
+  display: inline-block;
+  font-family: "Noto Sans JP", sans-serif;
 }
