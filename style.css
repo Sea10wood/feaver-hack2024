@@ -26,6 +26,12 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  background-color: transparent;
+  font-family: "DotGothic16", sans-serif;
+}
+
 .top-text,
 .side-message1 {
   font-family: "DotGothic16", sans-serif;
@@ -33,7 +39,7 @@ body {
 h1 {
   font-family: "DotGothic16", sans-serif;
   color: white;
-  font-size: 40px;
+  font-size: 24px;
   text-shadow: 3px 3px green;
   background-color: transparent;
   letter-spacing: 0.12em;
@@ -46,7 +52,7 @@ h4 {
 p {
   font-family: "DotGothic16", sans-serif;
   color: white;
-  font-size: 24px;
+  font-size: 16px;
   background-color: transparent;
   letter-spacing: 0.12em;
 }
@@ -67,6 +73,35 @@ header {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
+}
+
+.styled {
+  border: 0;
+  line-height: 1.6;
+  padding: 0 12px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(29, 134, 174, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 main {
@@ -237,7 +272,7 @@ a.btn--yellow {
 h1#judge {
   font-family: "DotGothic16", sans-serif;
   color: white;
-  font-size: 40px;
+  font-size: 24px;
   text-shadow: 3px 3px purple;
   background-color: transparent;
   letter-spacing: 0.12em;
@@ -295,7 +330,7 @@ footer {
 }
 
 .kcl {
-  padding-top: 10px;
+  padding-top: 14px;
 }
 
 .kcl-img {
@@ -328,11 +363,11 @@ footer {
   }
 
   .first-come-first-served p {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .first-come-first-served .english {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .arrow {
@@ -386,7 +421,7 @@ footer {
 
 @media screen and (max-width: 740px) {
   h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   p {
@@ -405,7 +440,7 @@ footer {
   .feaver-img {
     width: 100%;
     margin-top: 200px;
-    scale: 2;
+    scale: 2.8;
   }
 
   .top-text {
@@ -437,7 +472,7 @@ footer {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
   }
-  
+
   html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -446,12 +481,11 @@ footer {
 
   .button-container {
     display: absolute;
-    justify-content: center; 
+    justify-content: center;
     margin-top: 150px;
     margin-left: 30%;
   }
-  
-  
+
   .btn,
   a.btn,
   button.btn {
@@ -475,7 +509,6 @@ footer {
     color: #212529;
     border-radius: 4px;
     margin: 0 auto;
-   
   }
 
   a.btn--yellow {
