@@ -130,6 +130,35 @@ a.btn--yellow {
   text-shadow: 3px 3px #81bedb;
   background-color: transparent;
 }
+.top-text.is-active {
+  animation: feaverhack 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    rotateAfter 2s ease-out 0.8s forwards;
+}
+
+@keyframes feaverhack {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(150%);
+  }
+  30% {
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.5) translateY(-30%);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes rotateAfter {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
 
 .top-date {
   font-size: 80px;
