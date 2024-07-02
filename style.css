@@ -131,8 +131,9 @@ a.btn--yellow {
   background-color: transparent;
 }
 .top-text.is-active {
-  animation: feaverhack 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    rotateAfter 2s ease-out 0.8s forwards;
+  animation: feaverhack 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1,
+    rotateAfter 2s ease-out 0.8s forwards 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes feaverhack {
